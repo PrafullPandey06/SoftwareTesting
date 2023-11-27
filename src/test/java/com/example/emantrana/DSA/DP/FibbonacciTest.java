@@ -13,7 +13,7 @@ public class FibbonacciTest {
         assertEquals(2, fibonacci.fibMemo(3));
         assertEquals(3, fibonacci.fibMemo(4));
         assertEquals(5, fibonacci.fibMemo(5));
-        // Add more test cases as needed...
+
     }
 
     @Test
@@ -25,7 +25,7 @@ public class FibbonacciTest {
         assertEquals(2, fibonacci.fibBotUp(3));
         assertEquals(3, fibonacci.fibBotUp(4));
         assertEquals(5, fibonacci.fibBotUp(5));
-        // Add more test cases as needed...
+
     }
 
     @Test
@@ -37,7 +37,7 @@ public class FibbonacciTest {
         assertEquals(2, fibonacci.fibOptimized(3));
         assertEquals(3, fibonacci.fibOptimized(4));
         assertEquals(5, fibonacci.fibOptimized(5));
-        // Add more test cases as needed...
+
     }
 
     @Test
@@ -49,7 +49,7 @@ public class FibbonacciTest {
         assertEquals(2, fibonacci.fibBinet(3));
         assertEquals(3, fibonacci.fibBinet(4));
         assertEquals(5, fibonacci.fibBinet(5));
-        // Add more test cases as needed...
+
     }
 
     @Test
@@ -62,7 +62,7 @@ public class FibbonacciTest {
         int fibOptimizedResult = fibonacci.fibOptimized(n);
         int fibBinetResult = fibonacci.fibBinet(n);
 
-        // Integration test assertions
+
         assertEquals(fibBotUpResult, fibOptimizedResult);
         assertEquals(fibBinetResult, fibMemoResult);
 

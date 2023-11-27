@@ -6,14 +6,7 @@ import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-/**
- * Given an adjacency list of a graph adj of V no. of vertices having 0 based
- * index. Check whether the graph is bipartite or not.
- *
- * Input : {{0, 1, 0, 1}, {1, 0, 1, 0}, {0, 1, 0, 1}, {1, 0, 1, 0}}
- *
- * Output : YES
- */
+
 public class BipartiteGrapfDFS {
 
     private static boolean bipartite(int V, ArrayList<ArrayList<Integer>> adj, int[] color, int node) {

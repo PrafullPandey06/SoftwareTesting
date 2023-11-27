@@ -6,7 +6,6 @@ public class KnapSackTest {
     public void testKnapSack() {
         KnapSack knapSack = new KnapSack();
 
-        // Test case 1
         int capacity1 = 50;
         int[] weights1 = {10, 20, 30};
         int[] profits1 = {60, 100, 120};

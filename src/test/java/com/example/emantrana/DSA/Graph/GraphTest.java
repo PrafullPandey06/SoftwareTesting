@@ -53,7 +53,7 @@ public class GraphTest {
         graph.addEdge("A", "B");
         graph.addEdge("B", "C");
         assertTrue(graph.removeEdge("A", "B"));
-        assertFalse(graph.removeEdge("A", "B")); // Edge doesn't exist
+        assertFalse(graph.removeEdge("A", "B"));
         assertTrue(graph.addEdge("C", "D"));
     }
 
@@ -64,7 +64,7 @@ public class GraphTest {
         graph.addVertex(2);
         assertTrue(graph.addEdge(1, 2));
         assertTrue(graph.removeVertex(1));
-        assertFalse(graph.removeEdge(1, 2)); // Edge doesn't exist after removing vertex
-        assertFalse(graph.removeVertex(1)); // Vertex doesn't exist
+        assertFalse(graph.removeEdge(1, 2));
+        assertFalse(graph.removeVertex(1));
     }
 }

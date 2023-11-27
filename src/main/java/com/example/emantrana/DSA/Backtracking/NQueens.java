@@ -21,7 +21,7 @@ public class NQueens {
 
     private static void getSolution(int boardSize, List<List<String>> solutions, int[] columns, int columnIndex) {
         if (columnIndex == boardSize) {
-            // this means that all queens have been placed
+
             List<String> sol = new ArrayList<String>();
             for (int i = 0; i < boardSize; i++) {
                 StringBuilder sb = new StringBuilder();

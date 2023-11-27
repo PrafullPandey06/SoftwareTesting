@@ -5,7 +5,6 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class PalindromeTest {
 
-    // Unit Test 1: Verify null string is palindrome
     @Test
     void testIsPalindrome_NullString() {
         assertTrue(Palindrome.isPalindrome(null));
@@ -16,13 +15,12 @@ class PalindromeTest {
         assertTrue(Palindrome.isPalindromeRecursion(null));
     }
 
-    // Unit Test: Verify isPalindromeRecursion handles empty string
     @Test
     void testIsPalindromeRecursion_EmptyString() {
         assertTrue(Palindrome.isPalindromeRecursion(""));
     }
 
-    // Additional Unit Test: Verify isPalindromeRecursion handles single-character string
+
     @Test
     void testIsPalindromeRecursion_SingleCharacterString() {
         assertTrue(Palindrome.isPalindromeRecursion("a"));

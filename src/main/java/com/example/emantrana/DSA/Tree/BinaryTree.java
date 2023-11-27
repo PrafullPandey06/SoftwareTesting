@@ -44,7 +44,7 @@ public class BinaryTree {
         while (current != null) {
             if (key < current.data) {
                 if (current.left == null) {
-                    return current; // The key isn't exist, returns the parent
+                    return current;
                 }
                 current = current.left;
             } else if (key > current.data) {
@@ -52,7 +52,7 @@ public class BinaryTree {
                     return current;
                 }
                 current = current.right;
-            } else { // If you find the value return it
+            } else {
                 return current;
             }
         }
